@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "f7f17717-50e7-4585-a870-1a85439d705f",
+		"name": "TestTaskProducts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create table",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:56599/api/products/createtable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "56599",
+					"path": [
+						"api",
+						"products",
+						"createtable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Drop table",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:56599/api/products/droptable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "56599",
+					"path": [
+						"api",
+						"products",
+						"droptable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Denomination\": \"bbbbbb\",\n\t\"Price\": \"2000\",\n\t\"Quantity\": \"555\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:56599/api/products/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "56599",
+					"path": [
+						"api",
+						"products",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:56599/api/products/delete/9260e637-bb84-4666-8cdd-7fdce6f4a68f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "56599",
+					"path": [
+						"api",
+						"products",
+						"delete",
+						"9260e637-bb84-4666-8cdd-7fdce6f4a68f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get product",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:56599/api/products/get/d6fb0388-d690-4bed-85bf-8766ad8193e3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "56599",
+					"path": [
+						"api",
+						"products",
+						"get",
+						"d6fb0388-d690-4bed-85bf-8766ad8193e3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\": \"d6fb0388-d690-4bed-85bf-8766ad8193e3\",\n\t\"Denomination\": \"dfdsfsadf\",\n\t\"Price\": \"2000\",\n\t\"Quantity\": \"565\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:56599/api/products/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "56599",
+					"path": [
+						"api",
+						"products",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:56599/api/products/getall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "56599",
+					"path": [
+						"api",
+						"products",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:56599/api/products/deleteall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "56599",
+					"path": [
+						"api",
+						"products",
+						"deleteall"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
